@@ -1,10 +1,11 @@
 import React from 'react';
+import RegisterForm from './components/RegisterForm';
 import './assets/scss/App.scss';
 
 function App() {
   return (
     <div className="App">
-    test
+      <RegisterForm />
     </div>
   );
 }
