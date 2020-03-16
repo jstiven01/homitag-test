@@ -1,0 +1,24 @@
+.form-container {
+    font-family: 'Noto Serif', serif;
+    width: 380px;
+    border: 1px solid black;
+    margin: 54px auto;
+    padding: 30px;
+    .title-form{
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .form-group label{
+        font-size: 14px;
+        color:rgba(0, 0, 0, 0.76);
+    }
+    .submit-register{
+        background-color: rgba(0, 0, 0, 0.906);
+        color: rgba(255, 255, 255, 0.97);
+    }
+    .errors{
+        color:rgb(204, 84, 84);
+        font-size: 10px;
+    }
+
+}

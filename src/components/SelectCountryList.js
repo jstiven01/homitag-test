@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const SelectCountryList = ({ id, name, formRef }) => (
-  <label htmlFor={name}>
-    Country
+  <label htmlFor={name} className="d-flex flex-column">
+    <span>Country</span>
 
     <select id={id} name={name} ref={formRef} defaultValue="">
-      <option value="" disabled> -- select an option -- </option>
+      <option value="" disabled> -- Select an option -- </option>
       <option value="Afganistan">Afghanistan</option>
       <option value="Albania">Albania</option>
       <option value="Algeria">Algeria</option>

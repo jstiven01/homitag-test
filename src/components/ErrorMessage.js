@@ -5,11 +5,11 @@ const ErrorMessage = ({ error }) => {
   if (error) {
     switch (error.type) {
       case 'required':
-        return <p>This Field is required</p>;
+        return <div className="errors"><p>This Field is required</p></div>;
       case 'minLength':
-        return <p>This Field needs minimum 3 characters</p>;
+        return <div className="errors"><p>This Field needs minimum 3 characters</p></div>;
       case 'pattern':
-        return <p>{error.message}</p>;
+        return <div className="errors"><p>{error.message}</p></div>;
       default:
         return null;
     }
