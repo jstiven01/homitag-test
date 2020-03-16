@@ -7,16 +7,9 @@ const ErrorMessage = ({ error }) => {
       case 'required':
         return <p>This Field is required</p>;
       case 'minLength':
-        return <p>Your last name need minimum 3 characters</p>;
+        return <p>This Field needs minimum 3 characters</p>;
       case 'pattern':
-        return <p>Enter a valid email address</p>;
-      case 'patternPassword':
-        return (
-          <p>
-            at least 8 digits, 1 uppercase, 1 number and 1 special
-            character
-          </p>
-        );
+        return <p>{error.message}</p>;
       case 'min':
         return <p>Minimum age is 18</p>;
       case 'validate':
@@ -32,7 +25,15 @@ const ErrorMessage = ({ error }) => {
 ErrorMessage.propTypes = {
   error: PropTypes.shape({
     type: PropTypes.string,
-  }).isRequired,
+    message: PropTypes.string,
+  }),
+};
+ErrorMessage.defaultProps = {
+  error: {
+    type: '',
+    message: '',
+  },
+
 };
 
 export default ErrorMessage;
