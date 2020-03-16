@@ -5,7 +5,6 @@ const SelectCountryList = ({ id, name, formRef }) => (
   <label htmlFor={name}>
     Country
 
-
     <select id={id} name={name} ref={formRef} defaultValue="">
       <option value="" disabled> -- select an option -- </option>
       <option value="Afganistan">Afghanistan</option>

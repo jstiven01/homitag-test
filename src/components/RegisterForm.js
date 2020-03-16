@@ -10,11 +10,10 @@ const RegisterForm = () => {
     register,
     handleSubmit,
     errors,
-    formState: { isSubmitting },
   } = useForm();
 
   const onSubmit = data => {
-    console.log((JSON.stringify(data)), 'asdsadsa', data);
+    console.log((JSON.stringify(data)));
   };
 
   return (
@@ -68,7 +67,7 @@ const RegisterForm = () => {
 
       <label htmlFor="picture">
         Profile Picture
-        <input name="picture" id="picture" ref={register} />
+        <input type="file" name="picture" id="picture" ref={register} />
       </label>
 
       <label htmlFor="phone">
